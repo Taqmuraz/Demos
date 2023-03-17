@@ -1,0 +1,4 @@
+class(firstName, lastName, company)
+(
+    display:p -> ["Name : ", firstName, " ", lastName, " ", ", Company : ", company].each(p)
+)

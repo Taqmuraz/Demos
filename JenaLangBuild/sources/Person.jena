@@ -1,0 +1,7 @@
+class(firstName, lastName)
+(
+    display:printer ->
+    (
+        ["Name : ", firstName, " ", lastName].each(printer)
+    )
+)

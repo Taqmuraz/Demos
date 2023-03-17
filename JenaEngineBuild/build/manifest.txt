@@ -1,0 +1,3 @@
+Main-Class: jena.main.Program 
+Class-Path: ../lib/jogl-all.jar ../lib/gluegen-rt.jar 
+ 

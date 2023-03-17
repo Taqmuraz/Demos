@@ -1,0 +1,7 @@
+using (source("sources/Person.jena"), source("sources/Employee.jena")) as (Person, Employee)
+(
+    using(Person("Peter", "Parker"), Employee("Bob", "Smith", "Google")) as (peter, bob)
+    (
+        [peter, bob].each(p -> [p.display(print), print(line)])
+    )
+)

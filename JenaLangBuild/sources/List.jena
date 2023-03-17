@@ -1,0 +1,14 @@
+using
+(
+    class(list)
+    (
+        each:list.each,
+        add:element -> class(
+            ((l, e) -> each:a -> [l.each(a), a(e)])
+            (this, element)
+        )
+    )
+)
+as(List) (List([1]) + 1 + 2 + 11 + 15 + 55)
+    .each(n -> [print(n), print(" ")])
+    

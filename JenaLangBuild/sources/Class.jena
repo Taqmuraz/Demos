@@ -1,0 +1,34 @@
+using
+(
+    class(name, age)
+    (
+        info:printer -> ["Name : ", name, ", age : ", age].each(printer)
+    ),
+
+    class(name) info:p -> ["Name : ", name].each(p),
+
+    class() info:printer -> printer("Just Harry"),
+
+    class info:printer -> printer("Just Peter"),
+
+    (name, age, salary) -> info:reader -> ["Name : ", name, " Age : ", age, ", Worth : ", age * salary ].each(reader)
+)
+
+as (AgedPerson,
+    Person,
+    Harry,
+    Peter,
+    WorkingAgedPerson)
+
+using(
+    Person("Bob"),
+    AgedPerson("Jerry", 50),
+    Harry(),
+    Peter(),
+    WorkingAgedPerson("Garry", 25, 1000))
+
+as (bob,
+    jerry,
+    harry,
+    peter,
+    garry) [bob, jerry, garry, peter, harry].each(person -> [person.info(print), print(line)])
