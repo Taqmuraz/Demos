@@ -1,5 +1,7 @@
 [0-9]+ -- int literal
 
+-[expression] -- negative expression
+
 "[.*]" -- text literal
 
 [a-z|A-Z]+ -- name
@@ -51,6 +53,10 @@ array
 member access expression
 parenthesized expression
 class expression
+negative expression
+invocation expression
+member access expression
+binary expression
 
 non-continuable syntaxes :
 

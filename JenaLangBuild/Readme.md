@@ -12,7 +12,7 @@ Next, input code as single line. It may be any valid **Jena** expression.
 
 **Examples** :
 
-print sum of two numbers, entered by user : `print(readInt() + readInt())`
+print sum of two numbers, entered by user : `using(readInt(), readInt()) as (a, b) print(a + b)`
 
 print numbers from 0 to 9: `10.times().each(print)`
 
