@@ -1,0 +1,62 @@
+[0-9]+ -- int literal
+
+"[.*]" -- text literal
+
+[a-z|A-Z]+ -- name
+
+([name|,*]+) -- argument list
+
+([expression|,*]+) -- expression list
+
+\[[expression|,*]+)\] -- array
+
+method [argument list] [expression] -- method
+
+[expression] [+|-|*|/|<|>|==|!=] [expression] -- binary expression
+
+[expression].[name] -- member access expression
+
+[expression][expression list] -- invocation expression
+
+([expression]) -- parenthesized expression
+
+using [expression list] as [argument list] [expression] -- using expression
+
+[argument list | name] -> [expression] -- method arrow expression
+
+[name]:[expression] -- member
+
+([member|,*]+) -- member list
+
+class[argument list][member list] -- classic class expression
+
+class[argument list][member] -- class single member expression
+
+class[member] -- class single member without arguments expression
+
+[argument list | name] -> [member] -- class arrow expression
+
+continuous syntaxes :
+
+invocation expression
+member access expression
+binary expression
+
+continuable syntaxes :
+
+int literal
+text literal
+name
+array
+member access expression
+parenthesized expression
+class expression
+
+non-continuable syntaxes :
+
+method expression
+method arrow expression
+using expression
+class single member expression
+class single member without arguments expression
+class arrow expression
