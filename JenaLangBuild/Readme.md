@@ -3,10 +3,10 @@ How to run **Jena** code?
 First, launch the command line interpreter.
 
 **Windows** :
-run the run_windows.bat file by double-clicking it or run command in the windows power shell : `start run_windows.bat`
+run the ***run_windows.bat*** file by double-clicking it or run command in the windows power shell : `start run_windows.bat`
 
 **Linux** :
-run the run_linux.sh file by the linux terminal command : `sh run_linux.sh`
+run the ***run_linux.sh*** file by the linux terminal command : `sh run_linux.sh`
 
 Next, input code as single line. It may be any valid **Jena** expression.
 
