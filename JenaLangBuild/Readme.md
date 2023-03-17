@@ -16,7 +16,7 @@ print sum of two numbers, entered by user : `using(readInt(), readInt()) as (a, 
 
 print numbers from 0 to 9: `10.times().each(print)`
 
-print numbers from 5 to 10: `6.times(i -> i + 5).each(print)`
+print numbers from 5 to 10: `6.times().map(i -> i + 5).each(print)`
 
 print some strings separated by comma : `["Peter", "Bob", "Richard"].join(",").each(print)`
 
