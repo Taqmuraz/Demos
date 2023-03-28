@@ -1,0 +1,14 @@
+using
+(
+    class(i)
+    (
+        step:
+        (
+            [() -> class([i / 2, i * 3 + 1](i & 1)).step, () -> 1](i == 1)()
+        )
+    )
+)
+as (Step)
+(
+    print(Step(100).step)
+)

@@ -1,0 +1,15 @@
+class(x, y, z)
+(
+    x:x, y:y, z:z,
+
+    length:((x * x) + (y * y) + (z * z)).sqrt(),
+
+    add:v -> class(x + v.x, y + v.y, z + v.z),
+    sub:v -> class(x - v.x, y - v.y, z - v.z),
+    mul:v -> class(x * v.x, y * v.y, z * v.z),
+    div:v -> class(x / v.x, y / v.y, z / v.z),
+
+    dot:v -> using(this * v) as (m) m.x + m.y + m.z,
+
+    display:printer -> [ x, y, z ].join(", ").each(printer)
+)

@@ -38,6 +38,8 @@ class[member] -- class single member without arguments expression
 
 [argument list | name] -> [member] -- class arrow expression
 
+[member list | member] -> [expression] -- using arrow expression
+
 continuous syntaxes :
 
 invocation expression
@@ -63,6 +65,7 @@ non-continuable syntaxes :
 method expression
 method arrow expression
 using expression
+using arrow expression
 class single member expression
 class single member without arguments expression
 class arrow expression

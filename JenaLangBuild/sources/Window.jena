@@ -1,10 +1,9 @@
-using(Window(300, 350)) as (window)
-using(["Start", "Options", "Author", "Exit"]) as (labels)
+window:Window(300, 350) -> labels:["Start", "Options", "Author", "Exit"] ->
 [
-    labels.size.times().each(i ->
+    labels.size.times().pipe(window, (window, i) ->
     (
         window.button(labels(i), 50, 50 * (i + 1), 200, 50, () -> ["Click! ", labels(i), line].each(print))
-    )),
-    window.image("resources/Sea.jpeg", 0, 0, 300, 350),
-    window.show()
+    ))
+    .image("resources/Sea.jpeg", 0, 0, 300, 350)
+    .show()
 ]
