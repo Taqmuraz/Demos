@@ -27,8 +27,10 @@ using [expression list] as [argument list] [expression] -- using expression
 [argument list | name] -> [expression] -- method arrow expression
 
 [name]:[expression] -- member
+[name]=[expression] -- pair
 
 ([member|,*]+) -- member list
+([name|,*]+) -- pair list
 
 class[argument list][member list] -- classic class expression
 
@@ -38,7 +40,7 @@ class[member] -- class single member without arguments expression
 
 [argument list | name] -> [member] -- class arrow expression
 
-[member list | member] -> [expression] -- using arrow expression
+[pair list | pair] -> [expression] -- using arrow expression
 
 continuous syntaxes :
 

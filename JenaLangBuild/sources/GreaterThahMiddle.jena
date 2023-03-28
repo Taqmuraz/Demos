@@ -1,0 +1,5 @@
+rs:[200, 205, 202, 206, 208, 198, 202] ->
+    sum:rs.pipe(0, (i, j) -> i + j) ->
+        mid:sum / rs.size ->
+            over:rs.pipe(0, (t, i) -> mid < i + t) ->
+                ["Greater than middle : ", over].each(print)

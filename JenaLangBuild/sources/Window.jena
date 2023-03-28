@@ -1,4 +1,4 @@
-window:Window(300, 350) -> labels:["Start", "Options", "Author", "Exit"] ->
+window=Window(300, 350) -> labels=["Start", "Options", "Author", "Exit"] ->
 [
     labels.size.times().pipe(window, (window, i) ->
     (

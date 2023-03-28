@@ -1,0 +1,13 @@
+[
+    "sources/Class.jena",
+    "sources/Employee.jena",
+    "sources/GreaterThanMiddle.jena",
+    "sources/List.jena",
+    "sources/Main.jena",
+    "sources/Member.jena",
+    "sources/Nums.jena",
+    "sources/Person.jena",
+    "sources/Vector.jena",
+    "sources/VectorTest.jena",
+    "sources/Window.jena"
+].each(s -> ["Test ", s, ", start : ", line, source(s), line, "End.", line].each(print))
